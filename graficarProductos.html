@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graficos</title>
+	   <!-- Bootstrap CSS -->
+	   <!-- Latest compiled and minified CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<!-- Plotty JS -->
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #D8EAFA!important;">
+	  <div class="container-fluid">
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Menú
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#">Opción 1</a></li>
+	            <li><a class="dropdown-item" href="#">Opción 2</a></li>
+	            <li><hr class="dropdown-divider"></li>
+	            <li><a class="dropdown-item" href="#">Opción 3</a></li>
+	          </ul>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#">User Name</a>
+	        </li>
+	    </ul>
+
+	    </div>
+	  </div>
+	</nav>
+	<br>
+	<!--Combobox de Categoría, producto y marca-->
+	<div class="container-fluid">
+		<br>
+		<div class="row">
+
+			<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+				<center>
+					<label for="categoría" style="margin-bottom: 20px;">Categoría:</label>
+
+					<select name="categoría" id="categoría">
+					</select>
+				</center>
+			</div>
+
+			<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+				<center>
+					<label for="producto" style="margin-bottom: 20px;">Producto:</label>
+
+					<select name="producto" id="producto">
+					</select>
+				</center>
+			</div>
+
+			<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+				<center>
+					<label for="marca "style="margin-bottom: 20px;">Marca:</label>
+
+					<select name="marca" id="marca">
+					</select>
+				</center>
+			</div>
+
+		</div>
+	</div>
+
+	<br><br>
+	<!--Visualización de Gráfica-->
+	<div class="container-fluid">
+		<div class="row">
+			<center><div id="myChart" class="myChart" style="width:100%;max-width:900px"></div></center>
+		</div>
+	</div>
+
+	<!--External Javascript-->
+	<script src="js/graficarProductos.js"></script>
+</body>
+</html>
